@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Omnibox Search Blocker",
+  "version": "1.0",
+  "description": "Blocks searches containing specific keywords.",
+  "permissions": ["omnibox"],
+  "omnibox": {
+    "keyword": "block" // This is the keyword that triggers your extension
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
